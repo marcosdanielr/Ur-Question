@@ -1,0 +1,86 @@
+.message {
+  background: #4d4d4d;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(202, 0, 0, 0.253);
+  padding: 1.5rem;
+
+  & + .message {
+    margin-top: 0.5rem;
+  }
+
+  &.highlighted {
+    background: rgba(214, 0, 0, 0.212);
+    border: 0.0625rem solid #770a0a;
+
+    footer .user-info span {
+      color: rgb(255, 102, 102);
+    }
+  }
+
+  &.answered {
+    background: #181818;
+
+    footer .user-info span {
+      color: rgb(161, 161, 161);
+    }
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+
+      > span {
+        margin-left: 0.5rem;
+        color: #ffffff;
+        font-size: 0.875rem;
+      }
+    }
+
+    > div {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+      transition: filter 0.5s;
+      &.like-button {
+        display: flex;
+        align-items: flex-end;
+        color: rgb(161, 161, 161);
+        gap: 0.5rem;
+
+        &.liked {
+          color: #fff;
+
+          svg path {
+            stroke: #eb3030;
+          }
+        }
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

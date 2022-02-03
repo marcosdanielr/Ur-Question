@@ -1,0 +1,109 @@
+#pageroom {
+  header {
+    padding: 1.5rem;
+    border-bottom: 0.0625rem solid #5c0000;
+
+    .content {
+      max-width: 70rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        max-height: 9.0625rem;
+      }
+
+      > div {
+        display: flex;
+        gap: 1rem;
+
+        button {
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+
+  main {
+    max-width: 50rem;
+    margin: 0 auto;
+
+    .room-title {
+      margin: 2rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        color: #cfcfcf;
+      }
+
+      span {
+        margin-left: 1rem;
+        background-color: #b92727;
+        border-radius: 6.25rem;
+        padding: 0.5rem 1rem;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 0.875rem;
+      }
+    }
+
+    form {
+      textarea {
+        width: 100%;
+        border: 0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.75rem rgba(255, 60, 0, 0.514);
+        resize: none;
+        min-height: 8.125rem;
+        outline: none;
+      }
+
+      .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        .user-info {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+          }
+
+          > span {
+            margin-left: 0.5rem;
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 0.875rem;
+          }
+        }
+
+        span {
+          font-size: 0.875rem;
+          color: #878791;
+          font-weight: 500;
+
+          button {
+            background: transparent;
+            border: 0;
+            color: rgb(141, 0, 0);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
